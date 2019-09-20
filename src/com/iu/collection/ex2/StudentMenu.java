@@ -48,7 +48,7 @@ public class StudentMenu {
 				sv.view(student);
 				break;
 			case 4:
-				System.out.println("학생정보삭제");
+				ss.studentDelete(students);
 				break;
 
 			default:

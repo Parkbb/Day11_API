@@ -45,4 +45,19 @@ public class StudentService {
 		}
 		return student;
 	}
+	
+	//메서드명 studentDelete
+	//이름을 입력해서 해당학생을 삭제
+	
+	public void studentDelete(ArrayList<Student> students) {
+		System.out.println("이름 입력");
+		String name = sc.next();
+		Student student = null;
+		for(int i=0;i<students.size();i++) {
+			if(students.get(i).getName().equals(name)) {
+				students.remove(i);
+				break;
+			}
+		}
+	}
 }
