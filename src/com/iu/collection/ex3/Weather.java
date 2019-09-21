@@ -2,10 +2,10 @@ package com.iu.collection.ex3;
 
 public class Weather {
 	
-	private String city; //도시이름
-	private double temp; //기온
-	private int humi; //습도
-	private String status; //날씨
+	private String city; //한글 왜 깨짐
+	private double temp; //湲곗삩
+	private int humi; //�뒿�룄
+	private String status; //�궇�뵪
 	public String getCity() {
 		return city;
 	}
