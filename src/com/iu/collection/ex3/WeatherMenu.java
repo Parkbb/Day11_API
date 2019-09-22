@@ -15,6 +15,7 @@ public class WeatherMenu {
 		WeatherService ws = new WeatherService();
 		WeatherView wv = new WeatherView();
 		Boolean check = true;
+		Weather [] weathers = null;
 		int choose;
 		while(check) {
 			System.out.println("1. 날씨정보 초기화");
@@ -32,7 +33,7 @@ public class WeatherMenu {
 				break;
 			case 3 :
 				
-				wv.view();
+				wv.view(weathers);
 				
 				break;
 			case 4 :

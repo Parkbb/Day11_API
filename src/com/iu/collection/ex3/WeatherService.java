@@ -15,7 +15,7 @@ public class WeatherService {
 		//파싱해서 날씨정보 입력
 	}
 
-	public void init() {
+	public Weather[] init() {
 		//메서드명 init
 		//날씨정보를 파싱해서 저장.
 		String ssb = this.sb.toString();
@@ -38,6 +38,9 @@ public class WeatherService {
 			weathers[index]=weather;
 			index++;
 		}
+		
+			
+			return weathers;
 		}
 
 	
