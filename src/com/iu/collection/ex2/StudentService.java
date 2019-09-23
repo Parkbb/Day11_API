@@ -49,15 +49,21 @@ public class StudentService {
 	//메서드명 studentDelete
 	//이름을 입력해서 해당학생을 삭제
 	
-	public void studentDelete(ArrayList<Student> students) {
+	public String studentDelete(ArrayList<Student> students) {
 		System.out.println("이름 입력");
 		String name = sc.next();
 		Student student = null;
+		String msg ="delete fail";
 		for(int i=0;i<students.size();i++) {
 			if(students.get(i).getName().equals(name)) {
 				students.remove(i);
+				msg = "delete succes";
 				break;
 			}
 		}
+		return msg;
 	}
+	/*public void studentDelete(ArrayList<Student> students, Student student) {
+		students.remove(student);
+	}*/
 }

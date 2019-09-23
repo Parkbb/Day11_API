@@ -1,9 +1,10 @@
 package com.iu.collection.ex3;
 
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class WeatherService {
-
+Scanner sc = null;
 	private StringBuffer sb;
 
 	public WeatherService() {
@@ -20,6 +21,13 @@ public class WeatherService {
 		//날씨정보를 파싱해서 저장.
 		String ssb = this.sb.toString();
 		StringTokenizer stsb = new StringTokenizer(ssb, "-");
+		/*int length=0;
+		while(stsb.hasMoreTokens()) {
+			String a = stsb.nextToken();
+			length++;
+		}*/
+		System.out.println(4);
+		
 		Weather [] weathers = new Weather[4];
 		
 		int index =0;
@@ -44,10 +52,14 @@ public class WeatherService {
 		}
 
 	
-
+	public void addWeather() {
 		//메서드명 addWeather
 		//날씨 정보를 입력받아서 추가
-
+		System.out.println("추가 정보 입력");
+		sb.append(sc.next());
+		
+		
+	}
 		//메서드명 findWeather
 		//도시명을 입력받아서 해당 Weather 검색
 	
