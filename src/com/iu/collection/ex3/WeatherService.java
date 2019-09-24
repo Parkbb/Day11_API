@@ -21,15 +21,16 @@ Scanner sc = null;
 		//날씨정보를 파싱해서 저장.
 		String ssb = this.sb.toString();
 		StringTokenizer stsb = new StringTokenizer(ssb, "-");
-		/*int length=0;
+		int length=0;
 		while(stsb.hasMoreTokens()) {
 			String a = stsb.nextToken();
 			length++;
-		}*/
-		System.out.println(4);
+		}
+		System.out.println(length);
 		
-		Weather [] weathers = new Weather[4];
-		
+		Weather [] weathers = new Weather[length/4];
+		//Weather [] weathers = new Weather[4];
+
 		int index =0;
 		while(stsb.hasMoreTokens()) {
 			Weather weather = new Weather();

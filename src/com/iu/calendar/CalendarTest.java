@@ -2,7 +2,7 @@ package com.iu.calendar;
 
 import java.util.Calendar;
 
-public class CarlendarTest {
+public class CalendarTest {
 
 	public static void main(String[] args) {
 		//현재 시간의 정보
